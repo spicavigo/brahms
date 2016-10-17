@@ -3,6 +3,8 @@
 Self Driving Car Simulator for Udacity [Challenge #2](https://medium.com/udacity/challenge-2-using-deep-learning-to-predict-steering-angles-f42004a36ff3#.5650j9v4s)
 
 
+This is to help evaluate your models. Given the model and images, steering angle, speed, time, the simulator will try to show how the car will move using the predicted steerings. 
+
 ##### Requirements
 * OpenCV
 * Scipy
