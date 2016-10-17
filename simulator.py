@@ -93,7 +93,7 @@ def calculate_heading(steering, speed, delta_time, steer_ratio, speed_convert, w
     return np.sign(steering) * abs(theta)
 
 
-def simulate(model, data_iter, width, height, steer_ratio=STEER_RATIO, speed_convert=SPEED_CONVERT,
+def simulate(prediction_fn, data_iter, width, height, steer_ratio=STEER_RATIO, speed_convert=SPEED_CONVERT,
              wheel_base=WHEEL_BASE, error_limit=ERROR_LIMIT):
     '''
     data_iter should produce elements of the following form:
@@ -140,7 +140,7 @@ def simulate(model, data_iter, width, height, steer_ratio=STEER_RATIO, speed_con
             return float(ts - st)/10**9
 
         image_disp = rotate(image_disp, theta_error, False)
-        predicted_steering = model.predict(image_pred[None, :, :, :])[0][0]
+        predicted_steering = prediction_fn(image_pred)
 
         last_steering = steering
         last_prediction = predicted_steering

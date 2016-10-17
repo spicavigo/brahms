@@ -52,4 +52,5 @@ if __name__ == "__main__":
     model.load_weights(weights_file)
 
     dataset = args.dataset
-    print simulate(model, gen(dataset), 640, 480, error_limit=pi/6)
+    prediction_fn = lambda image_pred: model.predict(image_pred[None, :, :, :])[0][0]
+    print simulate(prediction_fn, gen(dataset), 640, 480, error_limit=pi/6)
