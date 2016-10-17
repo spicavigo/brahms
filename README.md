@@ -38,7 +38,7 @@ A failure scenario is reached when either
 
 ### Questions and Contributions
 
-Reach out to me (@spicavigo) on Udacity's [Slack Channel](https://nd013.slack.com/messages/challenge-two/)
+Reach out to me (@yousuf) on Udacity's [Slack Channel](https://nd013.slack.com/messages/challenge-two/)
 
 
 _Adapted from comma.ai's [view_steering_model.py](https://github.com/commaai/research/blob/master/view_steering_model.py)_
