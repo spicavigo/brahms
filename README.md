@@ -13,6 +13,8 @@ Self Driving Car Simulator for Udacity [Challenge #2](https://medium.com/udacity
 
 Check out `sim_runner.py` for example usage
 
+[![Sample Video](http://img.youtube.com/vi/fAsRJ7-8Rb0/0.jpg)](https://www.youtube.com/watch?v=fAsRJ7-8Rb0 "Brahms")
+
 
 ### Motivation
 
